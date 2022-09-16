@@ -11,3 +11,4 @@ for i in data[1:]:
     gia = str(last + firt)
     dt = i.split(',')[0]+','+gia
     dtt.append(dt)
+save = '\n'.join(dtt)
