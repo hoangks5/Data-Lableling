@@ -10,7 +10,7 @@ import datetime as dt
 
 
 x = [dt.datetime.strptime(d,'%m/%Y').date() for d in dates]
-y = range(len(x)) # many thanks to Kyss Tao for setting me straight here
+y = list(frame['pr'])
 
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
