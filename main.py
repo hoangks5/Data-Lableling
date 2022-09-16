@@ -15,7 +15,7 @@ y = list(frame['pr'])
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
-plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%m/%d/%Y'))
+plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%d/%Y'))
 plt.gca().xaxis.set_major_locator(mdates.DayLocator())
 plt.plot(x,y)
 plt.gcf().autofmt_xdate()
