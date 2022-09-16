@@ -6,5 +6,5 @@ with open('XAU_USD.csv','r',encoding='utf-8') as f:
 
 for i in data[1:]:
     last = float(i.split(',')[2][:-1])
-    firt = float(i.split(',')[1][:-1])
+    firt = float(i.split(',')[1][1:])
     print(last)
