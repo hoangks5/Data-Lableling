@@ -6,3 +6,4 @@ with open("vietnam-temperature-from-1901-2015-wb.csv",'r',encoding='utf-8') as f
 
 for i in data:
     nb = i.split(',')[0]
+    timest = i.split(',')[1]+'/'
