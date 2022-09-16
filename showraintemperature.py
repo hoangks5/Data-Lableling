@@ -3,7 +3,7 @@ import pandas as pd
 
 frame = pd.read_csv('vietnam-temperature-from-1901-2015-wb.csv')
 
-dates = list(frame['Month/Year'])
+dates = list(frame['Month/Year'][0:30])
 
 
 import datetime as dt
