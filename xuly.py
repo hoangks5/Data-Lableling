@@ -9,3 +9,4 @@ for i in data[1:]:
     firt = float(i.split(',')[1][1:])*1000
     gia = str(last + firt)
     dt = i.split(',')[0]+','+gia
+    print(dt)
