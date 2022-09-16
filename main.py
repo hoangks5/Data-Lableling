@@ -9,13 +9,13 @@ dates = list(frame['Month/Year'])
 import datetime as dt
 
 
-x = [dt.datetime.strptime(d,'%m/%Y').date() for d in dates]
+x = [dt.datetime.strptime(d,'%m/01/%Y').date() for d in dates]
 y = range(len(x)) # many thanks to Kyss Tao for setting me straight here
 
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
-plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%m/%Y'))
+plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%m/01/%Y'))
 plt.gca().xaxis.set_major_locator(mdates.DayLocator())
 plt.plot(x,y)
 plt.gcf().autofmt_xdate()
