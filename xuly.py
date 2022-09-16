@@ -1,7 +1,7 @@
 
 
 
-with open('BTC_USD.csv','r',encoding='utf-8') as f:
+with open('Dầu_Thô_WTI.csv','r',encoding='utf-8') as f:
     data = f.read().splitlines()
 
 dtt = []
@@ -12,6 +12,6 @@ for i in data[1:]:
     dt = i.split(',')[0]+','+gia
     dtt.append(dt)
 save = '\n'.join(dtt)
-with open('BTC_USD.csv','w',encoding='utf-8') as f:
+with open('Dầu_Thô_WTI.csv','w',encoding='utf-8') as f:
     f.write(save)
     f.close()
