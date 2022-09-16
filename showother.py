@@ -3,7 +3,7 @@ import pandas as pd
 
 frame = pd.read_csv('XAU_USD.csv')
 
-dates = list(frame['Month/Year'])
+dates = list(frame['Ngày'])
 
 
 import datetime as dt
