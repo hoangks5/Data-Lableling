@@ -7,10 +7,7 @@ with open('Dầu_Thô_WTI.csv','r',encoding='utf-8') as f:
 dtt = []
 for i in data[1:]:
     last = float(i.split(',')[2][:-1])
-    try:
-        firt = float(i.split(',')[1][1:])*1000
-    except:
-        firt = 0
+    firt = float(i.split(',')[1][1:])*1000
     gia = str(last + firt)
     dt = i.split(',')[0]+','+gia
     dtt.append(dt)
