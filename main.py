@@ -9,7 +9,7 @@ dates = list(frame['Month/Year'])
 import datetime as dt
 
 
-x = [dt.datetime.strptime('01'+d,'%d/%m/%Y').date() for d in dates]
+x = [dt.datetime.strptime('01/'+d,'%d/%m/%Y').date() for d in dates]
 y = range(len(x)) # many thanks to Kyss Tao for setting me straight here
 
 import matplotlib.pyplot as plt
