@@ -3,7 +3,7 @@ import pandas as pd
 
 frame = pd.read_csv('vietnam-rainfall-from-1901-2015-wb.csv')
 
-print(frame)
+print(frame[0])
 
 
 """ import datetime as dt
