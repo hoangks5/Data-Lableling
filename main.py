@@ -1,7 +1,7 @@
 
 
 
-with open("vietnam-temperature-from-1901-2015-wb.csv",'r',encoding='utf-8') as f:
+with open("vietnam-rainfall-from-1901-2015-wb.csv",'r',encoding='utf-8') as f:
     data = f.read().splitlines()
 
 t = []
@@ -11,6 +11,6 @@ for i in data:
     string = timest + ',' + nb
     t.append(string) 
 st = '\n'.join(t)
-with open("vietnam-temperature-from-1901-2015-wb.csv",'w',encoding='utf-8') as f:
+with open("vietnam-rainfall-from-1901-2015-wb.csv",'w',encoding='utf-8') as f:
     f.write(st)
     f.close()
