@@ -9,4 +9,4 @@ for i in data:
     nb = i.split(',')[0]
     timest = i.split(',')[2]+'/'+i.split(',')[1]
     string = timest + ',' + nb
-    
+    t.append(string) 
