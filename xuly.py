@@ -25,9 +25,7 @@ with open('Dầu_Thô_WTI.csv','r',encoding='utf-8') as f:
 
 dtt = []
 for i in data[1:]:
-    last = float(i.split(',')[2][:-1])
-    firt = float(i.split(',')[1][1:])*1000
-    gia = str(last + firt)
+    gia = i.split(',')[1]
     dt = i.split(',')[0]+','+gia
     dtt.append(dt)
 save = '\n'.join(dtt)
