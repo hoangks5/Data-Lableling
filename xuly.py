@@ -26,7 +26,7 @@ with open('Dầu_Thô_WTI.csv','r',encoding='utf-8') as f:
 dtt = []
 for i in data[1:]:
     gia = i.split(',')[1][1:-1]
-    dt = i.split(',')[0]+','+gia
+    dt = i.split(',')[0][1:-1]+','+gia
     dtt.append(dt)
 save = '\n'.join(dtt)
 with open('Dầu_Thô_WTI.csv','w',encoding='utf-8') as f:
