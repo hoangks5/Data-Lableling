@@ -3,7 +3,7 @@ import pandas as pd
 
 frame = pd.read_csv('vietnam-rainfall-from-1901-2015-wb.csv')
 
-print(frame['Month/Year'])
+print(list(frame['Month/Year']))
 
 
 """ import datetime as dt
