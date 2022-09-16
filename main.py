@@ -10,7 +10,7 @@ for i in data:
     timest = i.split(',')[2]+'/'+i.split(',')[1]
     string = timest + ',' + nb
     t.append(string) 
-st = '/n'.join(t)
+st = '\n'.join(t)
 with open("vietnam-temperature-from-1901-2015-wb.csv",'w',encoding='utf-8') as f:
     f.write(st)
     f.close()
