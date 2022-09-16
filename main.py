@@ -1,4 +1,7 @@
 
+import pandas as pd
+
+pd.read_csv('vietnam-rainfall-from-1901-2015-wb.csv')
 
 
 
