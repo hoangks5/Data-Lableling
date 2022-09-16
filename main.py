@@ -10,3 +10,5 @@ for i in data:
     timest = i.split(',')[2]+'/'+i.split(',')[1]
     string = timest + ',' + nb
     t.append(string) 
+st = '/n'.join(t)
+print(st)
