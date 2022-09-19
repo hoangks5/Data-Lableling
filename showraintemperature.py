@@ -6,7 +6,7 @@ frame = pd.read_csv('vietnam-temperature-from-1901-2015-wb.csv')
 dates = list(frame['Month/Year'][0:100])
 
 
-import datetime as dt
+import datetime as dt 
 
 
 x = [dt.datetime.strptime(d,'%m/%Y').date() for d in dates]
