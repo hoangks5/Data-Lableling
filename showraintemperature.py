@@ -3,14 +3,14 @@ import pandas as pd
 
 frame = pd.read_csv('vietnam-rainfall-from-1901-2015-wb.csv')
 
-dates = list(frame['Month/Year'][0:200])
+dates = list(frame['Month/Year'][0:500])
 
 
 import datetime as dt 
 
 
 x = [dt.datetime.strptime(d,'%m/%Y').date() for d in dates]
-y = list(frame['pr'][0:200])
+y = list(frame['pr'][0:500])
 
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
