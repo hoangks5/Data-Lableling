@@ -5,5 +5,6 @@ with open(path_name,'r',encoding='utf-8') as f:
     
 for i in data[1:]:
     j = float(i.split(',')[1][1:])
+    k = float(i.split(',')[2][:-1])
     print(j*1000)
     
