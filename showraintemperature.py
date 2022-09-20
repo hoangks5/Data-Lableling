@@ -10,7 +10,7 @@ import datetime as dt
 
 
 x = [dt.datetime.strptime(d,'%m/%Y').date() for d in dates]
-y = list(frame['tas'][0:200])
+y = list(frame['pr'][0:200])
 
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
