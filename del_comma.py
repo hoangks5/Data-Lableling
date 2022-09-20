@@ -11,4 +11,6 @@ for i in data[1:]:
     l = j*1000+k
     dtt.append(i.split(',')[0]+','+str(l))
     
-print(dtt)
+neww = '/n'.join(dtt)
+with open(path_name,'r',encoding='utf-8') as f:
+    data = f.read().splitlines()
