@@ -13,4 +13,5 @@ for i in data[1:]:
     
 neww = '/n'.join(dtt)
 with open('new.csv','w',encoding='utf-8') as f:
-    data = f.read().splitlines()
+    f.write(neww)
+    f.close()
