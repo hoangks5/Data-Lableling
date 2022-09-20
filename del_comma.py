@@ -11,3 +11,4 @@ for i in data[1:]:
     l = j*1000+k
     dtt.append(i.split(',')[1][1:]+','+str(l))
     
+print(dtt)
