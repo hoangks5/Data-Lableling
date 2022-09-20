@@ -29,6 +29,6 @@ for i in data[1:]:
     dt = i.split(',')[0][1:-1]+','+gia
     dtt.append(dt)
 save = '\n'.join(dtt)
-with open('XAU_USD.csv','w',encoding='utf-8') as f:
+with open(path_name,'w',encoding='utf-8') as f:
     f.write(save)
     f.close()
