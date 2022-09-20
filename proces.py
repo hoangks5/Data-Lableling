@@ -23,8 +23,10 @@ path_name = 'XAU_USD.csv'
 with open(path_name,'r',encoding='utf-8') as f:
     data = f.read().splitlines()
 
+datanew = data['Date','Price']
 
-dtt = []
+print(datanew)
+''' dtt = []
 for i in data[1:]:
     gia = i.split(',')[1]
     dt = i.split(',')[0][1:-1]+','+gia
@@ -32,4 +34,4 @@ for i in data[1:]:
 save = '\n'.join(dtt)
 with open(path_name,'w',encoding='utf-8') as f:
     f.write(save)
-    f.close()
+    f.close() '''
