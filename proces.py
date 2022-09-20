@@ -23,7 +23,7 @@ path_name = 'XAU_USD.csv'
 with open(path_name,'r',encoding='utf-8') as f:
     data = f.read().splitlines()
 
-datanew = data['Date','Price']
+datanew = data['Date']
 
 print(datanew)
 ''' dtt = []
