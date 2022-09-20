@@ -12,5 +12,5 @@ for i in data[1:]:
     dtt.append(i.split(',')[0]+','+str(l))
     
 neww = '/n'.join(dtt)
-with open(path_name,'r',encoding='utf-8') as f:
+with open('new.csv','w',encoding='utf-8') as f:
     data = f.read().splitlines()
