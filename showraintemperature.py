@@ -3,14 +3,14 @@ import pandas as pd
 
 frame = pd.read_csv('vietnam-temperature-from-1901-2015-wb.csv')
 
-dates = list(frame['Month/Year'][0:100])
+dates = list(frame['Month/Year'])
 
 
 import datetime as dt 
 
 
 x = [dt.datetime.strptime(d,'%m/%Y').date() for d in dates]
-y = list(frame['tas'][0:100])
+y = list(frame['tas'])
 
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
