@@ -1,7 +1,7 @@
 
 import pandas as pd
 
-frame = pd.read_csv('XAU_USD.csv')
+frame = pd.read_csv('BTC_USD.csv')
 
 dates = list(frame['Ngày'])
 
