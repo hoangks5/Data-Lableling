@@ -23,6 +23,7 @@ path_name = 'XAU_USD.csv'
 with open(path_name,'r',encoding='utf-8') as f:
     data = f.read().splitlines()
 
+
 dtt = []
 for i in data[1:]:
     gia = i.split(',')[1]
