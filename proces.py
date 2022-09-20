@@ -17,10 +17,10 @@ with open('Dầu_Thô_WTI.csv','w',encoding='utf-8') as f:
     f.close() """
 
 
+path_name = 'XAU_USD.csv'
 
 
-
-with open('XAU_USD.csv','r',encoding='utf-8') as f:
+with open(path_name,'r',encoding='utf-8') as f:
     data = f.read().splitlines()
 
 dtt = []
