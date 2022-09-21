@@ -1,7 +1,7 @@
 
 import pandas as pd
 
-
+# Lọc cột dữ liệu
 
 path_name = 'BTC_USD.csv' 
 key_cols = ['Date','Price']
