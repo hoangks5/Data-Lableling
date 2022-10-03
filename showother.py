@@ -1,7 +1,7 @@
 
 import pandas as pd
 
-frame = pd.read_csv('BTC_USD Bitfinex Historical Data.csv')
+frame = pd.read_csv('Copper Futures Historical Data.csv')
 
 dates = list(frame['Date'])
 
