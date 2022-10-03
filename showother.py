@@ -9,7 +9,7 @@ dates = list(frame['Date'])
 import datetime as dt
 
 
-x = [dt.datetime.strptime(d,'%d/%m/%Y').date() for d in dates]
+x = [dt.datetime.strptime(d,'%m/%d/%Y').date() for d in dates]
 y = list(frame['Price'])
 
 import matplotlib.pyplot as plt
