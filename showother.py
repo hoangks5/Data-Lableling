@@ -3,14 +3,14 @@ import pandas as pd
 
 frame = pd.read_csv('Dầu_Thô_WTI.csv')
 
-dates = list(frame['Ngày'])
+dates = list(frame['Date'])
 
 
 import datetime as dt
 
 
 x = [dt.datetime.strptime(d,'%d/%m/%Y').date() for d in dates]
-y = list(frame['Giá'])
+y = list(frame['Price'])
 
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
