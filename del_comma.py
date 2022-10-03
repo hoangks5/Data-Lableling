@@ -1,4 +1,4 @@
-path_name = 'BTC_USD.csv'
+path_name = 'BTC_USD Bitfinex Historical Data.csv'
 import regex as re
 with open(path_name,'r',encoding='utf-8') as f:
     data = f.read().splitlines()
