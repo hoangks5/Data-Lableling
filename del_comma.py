@@ -6,7 +6,7 @@ with open(path_name,'r',encoding='utf-8') as f:
     
 dtt = []
 for i in data[1:]:
-    re.sub(r'[^\w]', ' ', s)
+    i = re.sub(r'"', '', i)
     j = float(i.split(',')[1][1:])
     k = float(i.split(',')[2][:-1])
     l = j*1000+k
