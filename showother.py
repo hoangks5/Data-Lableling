@@ -1,7 +1,7 @@
 
 import pandas as pd
 
-frame = pd.read_csv('Crude Oil WTI Futures Historical Data.csv')
+frame = pd.read_csv('XAU_USD Historical Data.csv')
 
 dates = list(frame['Date'])
 
