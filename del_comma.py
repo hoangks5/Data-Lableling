@@ -1,4 +1,4 @@
-path_name = 'ETH_USD Binance Historical Data.csv'
+path_name = 'XAU_USD Historical Data.csv'
 with open(path_name,'r',encoding='utf-8') as f:
     data = f.read().splitlines()
     
