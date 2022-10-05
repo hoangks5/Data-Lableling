@@ -7,3 +7,5 @@ path_name = 'ETH_USD Binance Historical Data.csv'
 key_cols = ['Date','Price']
 df = pd.read_csv(path_name,usecols=key_cols,skipinitialspace=True)
 df.to_csv(path_name,index=False)
+
+
