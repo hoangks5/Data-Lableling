@@ -7,4 +7,5 @@ with open(name_file,'r',encoding='utf-8') as f:
 convert = re.sub('/','-',data)
 print(convert)
 with open(name_file,'w',encoding='utf-8') as f:
-    f.write(c)
+    f.write(convert)
+    f.close()
