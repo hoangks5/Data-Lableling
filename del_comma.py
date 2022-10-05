@@ -1,4 +1,4 @@
-path_name = 'VN Index Historical Data.csv'
+path_name = 'BTC_USD Bitfinex Historical Data.csv'
 with open(path_name,'r',encoding='utf-8') as f:
     data = f.read().splitlines()
     
