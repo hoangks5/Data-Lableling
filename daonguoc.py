@@ -1,4 +1,4 @@
-name_file = 'ETH_USD Binance Historical Data.csv'
+name_file = 'EUR_USD Historical Data.csv'
 with open(name_file,'r',encoding='utf=8') as f:
     data = f.read().splitlines()
     data.reverse()
