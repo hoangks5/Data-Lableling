@@ -10,7 +10,7 @@ import datetime as dt
 
 
 x = [dt.datetime.strptime(d,'%d-%m-%Y').date() for d in dates]
-y = list(frame['Price'])
+y = list(frame['Value'])
 
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
